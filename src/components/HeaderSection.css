@@ -1,0 +1,12 @@
+.custom-header {
+  height: 50px !important;
+  line-height: 50px;
+}
+
+.logo {
+  float: left;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 0 10px;
+}

@@ -71,8 +71,6 @@
 
 // export default Post;
 
-// App.js
-// App.js
 import { useState } from "react";
 import { Button, notification } from "antd";
 import PostForm from "./PostForm";
@@ -90,7 +88,6 @@ const Post = () => {
   };
 
   const handleCreate = (values) => {
-    // Add a unique id to the post values
     const postWithId = { ...values, id: uuidv4() };
 
     fetch("http://localhost:5000/posts", {

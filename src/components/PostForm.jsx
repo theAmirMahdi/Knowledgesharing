@@ -1,7 +1,5 @@
 /* eslint-disable react/prop-types */
-// PostForm.js;
-import { useState } from "react";
-import { Modal, Form, Input, Button } from "antd";
+import { Modal, Form, Input } from "antd";
 
 const PostForm = ({ visible, onCreate, onCancel }) => {
   const [form] = Form.useForm();

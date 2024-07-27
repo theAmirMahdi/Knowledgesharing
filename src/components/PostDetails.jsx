@@ -1,7 +1,7 @@
-import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useState, useEffect } from "react";
 import axios from "axios";
-import { Card, Spin, Alert } from "antd";
+import { Spin, Alert, Card } from "antd";
+import { useParams } from "react-router-dom";
 
 const PostDetails = () => {
   const { id } = useParams();
@@ -30,10 +30,6 @@ const PostDetails = () => {
 
   if (error) {
     return <Alert message="Error" description={error} type="error" />;
-  }
-
-  if (!post) {
-    return <Alert message="Error" description="Post not found" type="error" />;
   }
 
   return (

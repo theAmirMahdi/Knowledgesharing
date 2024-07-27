@@ -118,7 +118,7 @@ const Post = () => {
   return (
     <div>
       <Button type="primary" onClick={showModal}>
-        Create Post
+        پست جدید
       </Button>
       <PostForm
         visible={visible}

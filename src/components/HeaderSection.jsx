@@ -1,4 +1,4 @@
-import { Menu } from "antd";
+import { Button, Menu } from "antd";
 import { Header } from "antd/es/layout/layout";
 import "./HeaderSection.css";
 import { NavLink } from "react-router-dom";
@@ -8,7 +8,9 @@ function HeaderSection() {
   return (
     <Header className="custom-header">
       <div className="logo">
-        <NavLink to="/">Knowledge Sharing</NavLink>
+        <NavLink style={{ color: "inherit" }} to="/">
+          Knowledge Sharing
+        </NavLink>
       </div>
 
       <Menu
@@ -17,16 +19,38 @@ function HeaderSection() {
         defaultSelectedKeys={["1"]}
         style={{ lineHeight: "50px" }}
       >
-        <div style={{ marginRight: "auto" }}>
-          <Menu.Item key="1">Home</Menu.Item>
-          <Menu.Item key="2">
-            <NavLink to="/about">About Us</NavLink>
+        <div>
+          <Menu.Item
+            key="1"
+            style={{
+              background: "none",
+              border: "none",
+              color: "inherit",
+            }}
+          >
+            <Button>صفحه اصلی</Button>
           </Menu.Item>
-          <Menu.Item key="3">
-            <NavLink to="/contact">Contact</NavLink>
+          <Menu.Item
+            key="2"
+            style={{ background: "none", border: "none", color: "inherit" }}
+          >
+            <Button>
+              <NavLink to="/about">درباره ما</NavLink>
+            </Button>
+          </Menu.Item>
+          <Menu.Item
+            key="3"
+            style={{ background: "none", border: "none", color: "inherit" }}
+          >
+            <Button>
+              <NavLink to="/contact">ارتباط با ما</NavLink>
+            </Button>
           </Menu.Item>
         </div>
-        <Menu.Item>
+        <Menu.Item
+          key="4"
+          style={{ background: "none", border: "none", color: "inherit" }}
+        >
           <Post />
         </Menu.Item>
       </Menu>

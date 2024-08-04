@@ -1,0 +1,33 @@
+.custom-header {
+  height: 70px;
+  line-height: 70px;
+  direction: rtl;
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.logo {
+  font-size: 2rem; /* Larger font size */
+  color: #65b9cf; /* Green color for the text */
+  transition: color 0.3s; /* Smooth transition for color changes */
+  float: right;
+  border-left: 2px solid #fff;
+  border-right: 2px solid #fff;
+  border-radius: 10px;
+  line-height: 50px;
+  padding: 0 10px;
+}
+
+.logo:hover {
+  color: #0b81c5;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 768px) {
+  .logo {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,19 @@
+.postWrapper {
+  direction: rtl;
+  padding: 5px 20px;
+  border-radius: 5px;
+  background-color: #e6e3e3;
+  margin: 15px 0;
+}
+
+.postWrapper img {
+  width: 640px;
+  border-radius: 15px;
+  display: block;
+  margin: 0 auto;
+}
+
+.postWrapper h2 {
+  padding: 0 15px;
+  border-right: 5px solid #54359d;
+}

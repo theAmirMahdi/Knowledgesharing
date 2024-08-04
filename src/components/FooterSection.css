@@ -1,0 +1,71 @@
+.footerStyle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px 0;
+  background-color: #001529;
+  color: #fff;
+  border-radius: 10px;
+  flex-direction: column;
+  direction: rtl;
+}
+
+.ant-layout-footer {
+  padding: 24px 0;
+}
+.aboutUs {
+  display: flex;
+  flex-direction: column;
+  padding: 0 17px;
+  align-items: flex-start;
+}
+
+.aboutUs p {
+  text-align: right;
+}
+.quickAccess {
+  display: flex;
+  flex-direction: column;
+  padding: 0 17px;
+  align-items: flex-start;
+}
+
+.menuList {
+  background: none;
+}
+
+.links {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.links li {
+  margin-bottom: 10px;
+}
+.links a {
+  color: #fff;
+  display: flex;
+}
+
+.socialMedia {
+  display: flex;
+  flex-direction: column;
+  padding: 0 17px;
+  align-items: flex-start;
+}
+
+.socialMedia p {
+  text-align: right;
+}
+
+.list-style {
+  list-style: none;
+}
+
+.list-style img {
+  width: 24px;
+  height: 24px;
+  margin-left: 5px;
+}

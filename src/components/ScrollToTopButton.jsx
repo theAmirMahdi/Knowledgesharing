@@ -1,20 +1,28 @@
+import { ArrowUpOutlined } from "@ant-design/icons";
 import { useEffect, useState } from "react";
 import styled from "styled-components";
 
 const Button = styled.button`
   position: fixed;
+  width: 64px;
+  height: 64px;
   bottom: 20px;
   padding: 10px;
-  background-color: #54359d;
+  background-color: #5ca7f0;
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  display: ${(props) => (props.visible ? "block" : "none")};
+  z-index: 100;
   transition: opacity 0.3s;
-
+  display: ${(props) => (props.visible ? "block" : "none")};
   &:hover {
-    background-color: #443089;
+    background-color: #0075e7;
+  }
+
+  svg {
+    width: 20px;
+    height: 20px;
   }
 `;
 
@@ -45,7 +53,7 @@ const ScrollToTopButton = () => {
 
   return (
     <Button visible={visible} onClick={scrollToTop}>
-      به بالا
+      <ArrowUpOutlined />
     </Button>
   );
 };
